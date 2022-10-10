@@ -1,7 +1,10 @@
 let obj = JSON.parse($response.body);
 obj = {
+  "id": "b750213e-9b39-49ec-9679-009b97736e89",
+  "email": "445165653@qq.com",
   "subscriptionType": "edu",
   "subscriptions": [{
+    "id": 501413,
     "type": "edu",
     "tier": "pro",
     "effectiveFeatureSet": "pro",
