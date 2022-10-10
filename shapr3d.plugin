@@ -1,0 +1,10 @@
+#!name=Shapr3d高级版
+#!desc=Shapr3d解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/notability.png
+#!homepage=https://github.com/ShadowCabnient
+#!author=ShadowCabnient
+
+[MITM]
+hostname=prod.api.shapr3d.com
+
+[Script]
