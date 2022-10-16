@@ -1,0 +1,14 @@
+#!name=迅游加速器解锁
+#!desc=迅游加速器解锁
+#!icon=https://raw.githubusercontent.com/ShadowCabnient/1111/main/shapr3d.webp
+#!homepage=https://github.com/ShadowCabnient
+#!author=ShadowCabnient
+
+
+
+
+[MITM]
+hostname=api.xunyou.mobi
+
+[Script]
+http-response ^https://api.xunyou.mobi/api/v1/android/sessions requires-body=1,script-path=https://raw.githubusercontent.com/ShadowCabnient/1111/main/shapr3d.js
