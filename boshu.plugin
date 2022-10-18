@@ -1,0 +1,11 @@
+#!name=博树vip
+#!desc=博树vip
+#!icon=https://raw.githubusercontent.com/ShadowCabnient/1111/main/pikpak.PNG
+#!homepage=https://github.com/ShadowCabnient
+#!author=shadowcabinet
+
+[MITM]
+hostname=api.boshu.cn
+
+[Script]
+http-response ^https://api.boshu.cn/users/me requires-body=1,script-path=https://raw.iqiq.io/ShadowCabnient/1111/main/PikPak.js
