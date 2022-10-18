@@ -8,4 +8,4 @@
 hostname=api-drive.mypikpak.com
 
 [Script]
-http-response ^https://api-drive.mypikpak.com/drive/v1/about requires-body=1,script-path=https://raw.iqiq.io/ShadowCabnient/1111/main/nota.js
+http-response ^https://api-drive.mypikpak.com/vip/v1/vip/info requires-body=1,script-path=https://raw.iqiq.io/ShadowCabnient/1111/main/PikPak.js
