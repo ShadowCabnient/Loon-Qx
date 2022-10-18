@@ -5,7 +5,7 @@
 #!author=shadowcabinet
 
 [MITM]
-hostname=api.boshu.cn
+hostname=api.boshu.cn,api.busuu.com
 
 [Script]
-http-response ^https://api.boshu.cn/users/me requires-body=1,script-path=https://raw.iqiq.io/ShadowCabnient/1111/main/bushu.js
+http-response ^https?:\/\/(.*.*.)\/users/me requires-body=1,script-path=https://raw.iqiq.io/ShadowCabnient/1111/main/bushu.js
