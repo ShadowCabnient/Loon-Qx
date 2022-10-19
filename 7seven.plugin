@@ -1,0 +1,22 @@
+#!name=7sevenvip
+#!desc=7sevenvip
+#!icon=https://raw.githubusercontent.com/ShadowCabnient/1111/main/boshu.WEBP
+#!homepage=https://github.com/ShadowCabnient
+#!author=shadowcabinet
+
+
+
+
+[Rule]
+
+URL-REGEX,^https:\/\/api\.sevenworkouts\.com\/api\/v1\/buyers\/,Reject
+
+URL-REGEX,^https:\/\/api\.sevenworkouts\.com\/api\/v1\/account\/subscription-purchases,REJECT
+
+[MITM]
+
+hostname = api.sevenworkouts.com
+
+[Script]
+
+http-response ^https://api.sevenworkouts.com/api/v2/verify-purchases requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Seven.js
