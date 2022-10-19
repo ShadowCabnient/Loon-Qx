@@ -19,4 +19,4 @@ hostname = api.sevenworkouts.com
 
 [Script]
 
-http-response ^https://api.sevenworkouts.com/api/v2/verify-purchases requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Seven.js
+http-response ^https://api.sevenworkouts.com/api/v2/verify-purchases requires-body=1,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/seven.js
