@@ -1,0 +1,6 @@
+zkj
+
+
+DOMAIN,imap.gmail.com,DIRECT
+URL-REGEX,^https:\/\/api\.sevenworkouts\.com\/api\/v1\/account\/subscription-purchases,REJECT
+URL-REGEX,^https:\/\/api\.sevenworkouts\.com\/api\/v1\/buyers\/,REJECT
