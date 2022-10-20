@@ -8,4 +8,4 @@
 hostname=api.boshu.cn,api.busuu.com
 
 [Script]
-http-response ^https?:\/\/(.*.*.)\/users/me requires-body=1,script-path=https://raw.iqiq.io/ShadowCabnient/1111/main/bushu.js
+http-response ^https?:\/\/(.*.*.)\/users/me requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Busuu.js
