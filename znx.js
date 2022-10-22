@@ -66,5 +66,5 @@ obj = {
     "series-sum-12-2-1" : 9999,
     "func-deri" : 9999
   }
-}；
+};
 $done({body: JSON.stringify(obj)});
