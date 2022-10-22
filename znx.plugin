@@ -11,4 +11,4 @@ hostname=app.bestzixue.com
 [Script]
 http-response ^https://app.bestzixue.com/api/switchTopic requires-body=1,script-path=https://raw.githubusercontent.com/ShadowCabnient/1111/main/stream-response.js
 
-http-response ^https://app.bestzixue.com/api/getGroupBuyerInfo requires-body=1,script-path=https://raw.githubusercontent.com/ShadowCabnient/1111/main/ZNX3.js
+http-response ^https://app.bestzixue.com/api/getGroupBuyerInfo requires-body=1,script-path=https://raw.githubusercontent.com/ShadowCabnient/1111/main/ZXN3.js
