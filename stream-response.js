@@ -1,5 +1,5 @@
 let obj = JSON.parse($response.body);
-obj ={
+obj =
 {
   "isRusty" : true,
   "expirationDate" : {
