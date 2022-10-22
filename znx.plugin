@@ -9,4 +9,4 @@ hostname=app.bestzixue.com
 
 
 [Script]
-http-response ^app.bestzixue.com/api/switchTopic requires-body=1,script-path=https://raw.githubusercontent.com/ShadowCabnient/1111/main/stream-response.js
+http-response ^https:app.bestzixue.com/api/switchTopic requires-body=1,script-path=https://raw.githubusercontent.com/ShadowCabnient/1111/main/stream-response.js
