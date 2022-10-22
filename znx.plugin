@@ -1,0 +1,12 @@
+#!name=知能行
+#!desc=知能行
+#!icon=https://raw.githubusercontent.com/ShadowCabnient/1111/main/boshu.WEBP
+#!homepage=https://github.com/ShadowCabnient
+#!author=shadowcabinet
+
+[MITM]
+hostname=app.bestzixue.com
+
+
+[Script]
+http-response ^app.bestzixue.com/api/switchTopic requires-body=1,script-path=https://raw.githubusercontent.com/ShadowCabnient/1111/main/stream-response.js
