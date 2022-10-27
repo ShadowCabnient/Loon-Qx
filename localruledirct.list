@@ -1,5 +1,5 @@
-DOMAIN,imap.gmail.com
-DOMAIN,smtp.gmail.com
+#DOMAIN,imap.gmail.com
+#DOMAIN,smtp.gmail.com
 DOMAIN-KEYWORD,announce
 DOMAIN-KEYWORD,torrent
 DOMAIN-KEYWORD,tracker
