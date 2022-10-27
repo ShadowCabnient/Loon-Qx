@@ -1,5 +1,8 @@
 #!name=TikTok JP
 #!desc=TikTok Unlock
+#!icon= https://raw.githubusercontent.com/Tartarus2014/For-own-use/master/Color/TikTok.png
+#!homepage=https://github.com/ShadowCabnient
+#!author=shadowcabinet
 
 [URL Rewrite]
 (?<=_region=)CN(?=&) JP 307
