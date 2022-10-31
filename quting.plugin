@@ -1,15 +1,4 @@
 
 #!name=趣听音乐去弹窗
 #!desc=去除开屏升级弹窗
-#!icon= https://raw.githubusercontent.com/Tartarus2014/For-own-use/master/Color/TikTok.png
-#!homepage=https://github.com/ShadowCabnient
-#!author=shadowcabinet
-
-
-
-
-
-[Rewrite]
-^https?:\/\/api\.bspapp\.com\/client reject-dict
-[Mitm]
-hostname=api.bspapp.com
+#!icon= https://raw.iqiq.io/ShadowCabnient/1111/main/FA803060-B481-4469-9E23-DD5BF9894F9F.png
