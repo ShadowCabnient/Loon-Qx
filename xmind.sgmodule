@@ -1,0 +1,12 @@
+#!name=xmind恢复订阅
+#!desc=KK制作，商店版本点击恢复订阅即可！！
+
+
+[MITM]
+hostname = %APPEND% www.xmind.cn, www.xmind.net,www.xmind.app
+
+[Script]
+Xmind=type=http-response,pattern=https?:\/\/www\.xmind\.(cn|net|app)\/\_res\/devices,requires-body=1,script-path= https://raw.githubusercontent.com/ShadowCabnient/1111/main/xmind.js
+
+
+
