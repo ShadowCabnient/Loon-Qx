@@ -2,10 +2,10 @@ let obj = JSON.parse($response.body);
 obj = {
   "id": "b750213e-9b39-49ec-9679-009b97736e89",
   "email": "445165653@qq.com",
-  "subscriptionType": "pro",
+  "subscriptionType": "edu",
   "subscriptions": [{
     "id": 501413,
-    "type": "pro",
+    "type": "edu",
     "tier": "pro",
     "effectiveFeatureSet": "pro",
     "period": "yearly",
@@ -14,7 +14,7 @@ obj = {
     "autoRenewStatus": false,
     "isTrial": false
   }],
-  "subscriptionExpires": "2023-04-21T03:01:15.302Z",
+  "subscriptionExpires": "2099-12-31T03:01:15.302Z",
   "hasEmail": true,
   "hasPassword": true,
   "hasFacebookID": false,
