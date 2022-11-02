@@ -5,7 +5,7 @@ obj = {
   "subscriptionType": "edu",
   "subscriptions": [{
     "id": 501413,
-    "type": "edu",
+    "type": "pro",
     "tier": "pro",
     "effectiveFeatureSet": "pro",
     "period": "yearly",
