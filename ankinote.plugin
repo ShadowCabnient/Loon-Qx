@@ -8,4 +8,4 @@
 hostname = buy.itunes.apple.com
 
 [Script]
-http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/AnkiNoteProCrack.js, requires-body=true, timeout=10
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path= https://raw.fastgit.org/ShadowCabnient/1111/main/ankinote.js, requires-body=true, timeout=10
