@@ -1,0 +1,11 @@
+#!name=AnkiNote解锁pro
+#!desc=解锁pro
+#!icon= https://raw.githubusercontent.com/Tartarus2014/For-own-use/master/Color/ankinote.png
+#!homepage=https://github.com/ShadowCabnient
+#!author=shadowcabinet
+
+[mitm] 
+hostname = buy.itunes.apple.com
+
+[Script]
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/AnkiNoteProCrack.js, requires-body=true, timeout=10
