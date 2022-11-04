@@ -1,0 +1,8 @@
+#!name=555视频去广告
+#!desc=去广告
+#!homepage=https://github.com/ShadowCabnient
+#!author=shadowcabinet
+[Rewrite]
+^https:\/\/vip7\.fzwdyy\.cn:8083\/api\/getAdvertInfo reject
+[Mitm]
+hostname = vip7.fzwdyy.cn
