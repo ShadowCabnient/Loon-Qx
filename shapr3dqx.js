@@ -1,4 +1,4 @@
-*********
+*******************************
 
 [rewrite_local]
 ^https://prod.api.shapr3d.com/user-management/profile-with-device  url script-response-body https://raw.githubusercontent.com/ShadowCabnient/1111/main/shapr3d.js
@@ -7,7 +7,7 @@
 
 hostname=prod.api.shapr3d.com
 
-************/
+*******************************/
 
 let obj = JSON.parse($response.body);
 obj = {
