@@ -1,0 +1,34 @@
+#!name=你试试
+#!desc=你试试
+
+[Script]
+
+        # all in one
+        http-response ^http.+(media.(dss|star)ott|manifests.v2.api.hbo|hbomaxcdn|nflxvideo|cbs(aa|i)video|cloudfront|akamaihd|avi-cdn|huluim|youtube).(com|net)\/(.+\.vtt($|\?m=\d+)|.+-all-.+\.m3u8.*|hls\.m3u8.+|\?o=\d+&v=\d+&e=.+|\w+\/2\$.+\/[a-zA-Z0-9-]+\.m3u8|api\/timedtext.+),requires-body=1,max-size=0,timeout=30,script-path= https://raw.githubusercontent.com/Neurogram-R/Surge/master/Dualsub.js
+        http-request ^http.+(setting|general).(media.dssott|hbomaxcdn|nflxvideo|youtube|cbsivideo|cloudfront|huluim).(com|net)\/\?action=(g|s)et,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Neurogram-R/Surge/master/Dualsub.js
+
+        # individual
+        http-response https:\/\/.+media.(dss|star)ott.com\/ps01\/disney\/.+(\.vtt|-all-.+\.m3u8.*),requires-body=1,max-size=0,timeout=30,script-path= https://raw.githubusercontent.com/Neurogram-R/Surge/master/Dualsub.js
+        http-request https:\/\/setting.media.dssott.com\/\?action=(g|s)et,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Neurogram-R/Surge/master/Dualsub.js
+ 
+        http-response https:\/\/(manifests.v2.api.hbo.com|.+hbomaxcdn.com)\/(hls.m3u8.+|video.+\.vtt),requires-body=1,max-size=0,timeout=30,script-path= https://raw.githubusercontent.com/Neurogram-R/Surge/master/Dualsub.js
+       http-request https:\/\/setting.hbomaxcdn.com\/\?action=(g|s)et,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Neurogram-R/Surge/master/Dualsub.js
+
+        http-response ^http.+huluim.com\/.+\.vtt$,requires-body=1,max-size=0,timeout=30,script-path= https://raw.githubusercontent.com/Neurogram-R/Surge/master/Dualsub.js
+        http-request https:\/\/setting.huluim.com\/\?action=(g|s)et,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Neurogram-R/Surge/master/Dualsub.js
+
+        http-response https:\/\/.+nflxvideo.net\/\?o=\d+&v=\d+&e=.+,requires-body=1,max-size=0,timeout=30,script-path= https://raw.githubusercontent.com/Neurogram-R/Surge/master/Dualsub.js
+        http-request https:\/\/setting.nflxvideo.net\/\?action=(g|s)et,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Neurogram-R/Surge/master/Dualsub.js
+
+        http-response https:\/\/.+cbs(aa|i)video.com\/.+\.vtt(\?m=\d+)*,requires-body=1,max-size=0,timeout=30,script-path= https://raw.githubusercontent.com/Neurogram-R/Surge/master/Dualsub.js
+        http-request https:\/\/setting.cbsivideo.com\/\?action=(g|s)et,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Neurogram-R/Surge/master/Dualsub.js
+
+        http-response https:\/\/.+(cloudfront|akamaihd|avi-cdn).net\/(.+\.vtt|\w+\/2\$.+\/[a-zA-Z0-9-]+\.m3u8),requires-body=1,max-size=0,timeout=30,script-path= https://raw.githubusercontent.com/Neurogram-R/Surge/master/Dualsub.js
+       http-request https:\/\/setting.cloudfront.net\/\?action=(g|s)et,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Neurogram-R/Surge/master/Dualsub.js
+
+        http-response https:\/\/www.youtube.com\/api\/timedtext.+,requires-body=1,max-size=0,timeout=30,script-path= https://raw.githubusercontent.com/Neurogram-R/Surge/master/Dualsub.js
+        http-request https:\/\/setting.youtube.com\/\?action=(g|s)et,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Neurogram-R/Surge/master/Dualsub.js
+
+        [MITM]
+        hostname = *.media.dssott.com, *.media.starott.com, *.api.hbo.com, *.hbomaxcdn.com, *.huluim.com, *.nflxvideo.net, *.cbsaavideo.com, *.cbsivideo.com, *.cloudfront.net, *.akamaihd.net, *.avi-cdn.net, *.youtube.com
+
