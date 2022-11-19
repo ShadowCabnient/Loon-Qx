@@ -4,3 +4,5 @@
 
 URL-REGEX,^https:\/\/api\.sevenworkouts\.com\/api\/v1\/account\/subscription-purchases
 URL-REGEX,^https:\/\/api\.sevenworkouts\.com\/api\/v1\/buyers\/
+DOMAIN-KEYWORD,gjds.vip
+DOMAIN-KEYWORD,hub.nan.ge
