@@ -6,6 +6,8 @@ DOMAIN-KEYWORD,tracker
 DOMAIN-SUFFIX,smtp
 URL-REGEX,(Subject|HELO|SMTP)
 
+DOMAIN-KEYWORD,receiptcheck.quantumult.app
+
 DOMAIN-SUFFIX,local
 IP-CIDR,10.0.0.0/8
 IP-CIDR,17.0.0.0/8
