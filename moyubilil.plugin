@@ -4,14 +4,15 @@
 #!author=Shadowcabinet
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/bili.png
 
+
 [Script]
 
-http-response ^https://app.bilibili.com/x/v2/search/square script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/bilibili_json.js, requires-body=true, timeout=10, tag=bilibili_json
+# ～ BiliBili_哔哩哔哩_1080P高码率+4K画质(番剧和影视除外)@ddgksf2013
+http-response ^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/bilibili_json.js, requires-body=true, timeout=10, tag=bilibili_json
+
 
 [Mitm]
-
-hostname=app.bilibili.com
-
+hostname =app.bilibili.com
 
 
 
