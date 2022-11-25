@@ -1,0 +1,19 @@
+#!name=豆瓣增强 
+豆瓣网页增强
+#!homepage=https://github.com/Dopaminekk
+#!author=Shadowcabinet
+#!icon= https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Hangouts.png
+
+[Script]
+
+http-response ^https://m.douban.com/movie/subject/.+ script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/douban.js, requires-body=true, timeout=10, tag=douban
+http-request ^https://m.douban.com/movie/subject/.+\?seen=\d script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/douban.js, requires-body=false, timeout=10, tag=douban
+
+
+
+
+[MITM]
+hostname = m.douban.com
+
+
+
