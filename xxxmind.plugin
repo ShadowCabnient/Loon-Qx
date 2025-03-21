@@ -1,0 +1,5 @@
+[MITM]
+hostname=xmind.cn
+
+[Script]
+http-response ^https://www.xmind.cn/_api/appstore/active requires-body=1,https://raw.githubusercontent.com/ShadowCabnient/Loon-Qx/refs/heads/main/xxxmind.js
