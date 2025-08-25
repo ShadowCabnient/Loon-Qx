@@ -10,6 +10,14 @@ hostname = sublocsvc.hmprod.nova.xyz
  **/
 var body = $request.body;
 var obj = JSON.parse(body);
+
 obj.location.is_moving = true;
+obj.location.coords.speed = 1.5;
+obj.location.coords.speed_accuracy = 0.3;
+obj.location.coords.heading = 90;
+obj.location.coords.heading_accuracy = 10;
+obj.location.activity.type = "walking";
+obj.location.activity.confidence = 85;
+
 $done({body: JSON.stringify(obj)});
 
