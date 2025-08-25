@@ -16,7 +16,8 @@ obj.location.coords.speed = 1.5;
 obj.location.coords.speed_accuracy = 0.3;
 obj.location.coords.heading = 90;
 obj.location.coords.heading_accuracy = 10;
-
+obj.location.battery.level = 0.95; 
+obj.location.battery.is_charging = true; 
 
 $done({body: JSON.stringify(obj)});
 
