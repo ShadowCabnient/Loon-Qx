@@ -7,7 +7,7 @@
   
   [mitm]
 hostname = sublocsvc.hmprod.nova.xyz
- 
+ **/
 var body = $request.body;
 var obj = JSON.parse(body);
 obj.location.is_moving = true;
