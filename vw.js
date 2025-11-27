@@ -1,4 +1,4 @@
-/*
+    /*
 上汽大众APP 签到
 仅测试qx,理论支持surge,loon等等
 
@@ -38,7 +38,7 @@ const $ = new Env("上汽大众");
 const _key = 'csvw_data';
 $.huihui = $.toObj(getEnv(_key)) || {};
 // 调试开关：想看 request/响应，改成 'true'
-$.is_debug = 'true-';
+$.is_debug = 'true';
 $.messages = [];
 
 async function main() {
@@ -98,14 +98,18 @@ function csvw(obj) {
             const body = `{"refreshToken":"${this.refreshToken}","scope":"user"}`;
             const headers = this.herders;
             const rest = { url, body, headers, method: 'PUT' }; // 保持原版：PUT
-
             const res = await httpRequest(rest, '获取临时Token ');
             const code = res && res.code;
             const data = res && res.data;
             const description = res && (res.description || res.message || res.msg);
 
-            // 避免出现 “undefined”
+            // 关键：看 raw 里到底是什么
+            if (res && res.raw) {
+                $.log('获取临时Token raw: ' + res.raw.substring(0, 300)); // 截前 300 字避免太长
+            }
+
             pushMsg(`获取临时Token:${description || code || '无返回字段'}`);
+
 
             if (code === '000000') {
                 this.Sign_token = (data?.tokenType || 'Bearer') + ' ' + (data?.accessToken || '');
